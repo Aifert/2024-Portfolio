@@ -86,6 +86,10 @@ app.get("/api/getSong", async (req, res) => {
     }
 });
 
+app.get("/", async (req, res) => {
+    res.send("Hello world");
+})
+
 app.listen(port, () => {
     console.log(`Server running on ${port} successfully`);
 });

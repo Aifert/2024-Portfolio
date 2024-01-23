@@ -22,10 +22,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm i",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dev" : "npm start"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

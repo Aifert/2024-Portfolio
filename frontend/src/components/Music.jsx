@@ -50,7 +50,7 @@ function Music(props){
             fetchData();
             setPreview("Play");
         }
-      }, []);
+      },  [props.expand]);
 
     function handleNext(){
       setPreview("Play");

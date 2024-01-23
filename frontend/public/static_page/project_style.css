@@ -1,0 +1,149 @@
+body{
+    background-color : #F3EEEA;
+
+}
+
+
+#navbar{
+    background-color : #F3EEEA;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#content{
+    display : flex;
+    align-items : center;
+    height : 100vh;
+    background-color : #F3EEEA;
+    justify-content: center;
+}
+
+
+@font-face{
+    font-family : 'CustomFont';
+    src : url('./Retro\ Gaming.ttf') format('truetype');
+  }
+  
+
+
+
+.commit-container *{
+  color : #776B5D;
+  font-family : 'CustomFont', sans-serif;
+}
+
+
+.commit-container{
+  max-width : 900px;
+  margin-top : 500px;
+}
+
+.main{
+  background-color : #EBE3D5;
+}
+
+
+.custom-hr{
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background-color: black; 
+}
+
+a{
+    font-size : 1rem;
+}
+
+
+.main > h1{
+    font-size : 1.75rem;
+}
+
+footer{
+    font-size : 1rem;
+}
+
+.verdy{
+    height : 150px;
+}
+
+h2{
+    font-size : 1.6rem;
+}
+
+h3{
+    font-size : 1.25rem;
+}
+
+li{
+    font-size : 1.1em;
+}
+
+li>li{
+    font-size : 1rem;
+}
+
+.cardgrid {
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size as needed */
+    gap: 50px;
+    place-items:center;
+}
+
+.card {
+    width : 22rem;
+    background-color: #f8f3ef;
+}
+
+.btn{
+    background-color:#EBE3D5 ;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+}
+
+/* CSS adjustments for smaller screens */
+
+/* Desktop */
+
+@media (min-width : 1600px){
+    .main{
+      margin-top : 800px;
+    }
+  }
+  
+  /* Macbook */
+  @media (max-width: 1600px) and (min-width : 430px) {
+    .main {
+        margin-top : 800px;
+        margin-bottom : 100px;
+    }
+  }
+  
+  /* Phone */
+  
+  @media (max-width : 430px){
+    .main{
+      scale : 65%;
+      margin-top : 1300px;
+      margin-bottom : 100px;
+    }
+
+    .cardgrid {
+        display: grid;
+        grid-template-columns : 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size as needed */
+        gap: 20px;
+        place-items:center;
+    }
+
+    .card{
+        width : 18rem;
+    }
+  }
+  

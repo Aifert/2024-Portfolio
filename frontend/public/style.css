@@ -1,0 +1,148 @@
+body{
+    display : flex;
+    align-items : center;
+    height : 100vh;
+    background-color : #F3EEEA;
+}
+
+@font-face {
+    font-family: "retro";
+    src: url("./Retro\ Gaming.ttf");
+}
+
+
+.custom-container *{
+  color : #776B5D;
+  font-family : "retro", sans-serif;
+                                                
+}
+
+
+
+.custom-container{
+  max-width : 600px;
+}
+
+.main{
+  background-color : #EBE3D5;
+}
+
+
+.custom-hr{
+    width: 75%;
+    margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background-color: black; 
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #aca9a7, #787575, #aca8a7);
+    background-size: 180% 180%;
+    animation: gradient-animation 20s ease infinite;
+    color : white;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+.btn{
+  color : #EBE3D5;
+  height : 50px;
+  width : auto;
+  padding-top : 12px;
+}
+
+.guide{
+    list-style : none;
+    font-size : 1.4rem;
+}
+
+.guide > li > a{
+  text-decoration : none;
+}
+
+
+@media (max-width: 1600px) and (min-width : 430px) {
+  .main {
+      scale : 80%;
+      margin-top :100px;
+      margin-bottom : 100px;
+  }
+}
+
+@media (max-width : 430px){
+  .main{
+    scale : 70%;
+  }
+}
+
+#root .button{
+  cursor : pointer;
+  transition : opacity 0.3s;
+}
+
+.button:hover{
+  opacity : 0.8
+}
+
+.collapse{
+  background-color: red;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 10s ease;
+}
+
+
+#root .record{
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+  align-items: center;
+}
+
+#root .recordCard {
+  background-color : #525252;
+  height : 200px;
+  width : 200px;
+  border-radius : 50%;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .recordCard img{
+  height : 70%;
+  width : 70%;
+  border-radius : 50%;
+  animation : 10s linear 1s infinite normal none running spinRecord;
+}
+
+#root .buttons{
+  display : flex;
+  flex-direction : row;
+}
+
+@keyframes spinRecord {
+  0%{
+    transform : rotate(0);
+  }
+  100%{
+    transform : rotate(360deg);
+  }
+  
+}
+
+

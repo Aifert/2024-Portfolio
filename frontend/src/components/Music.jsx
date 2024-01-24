@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from "react";
 
+const backendURL = `https://portfolio-backend-tpxz.onrender.com/`
+
 function Music(props){
     const [imageURL, setImageURL] = useState(`${process.env.PUBLIC_URL}/images/verdy-removebg-preview.png`);
     const [songName, setSongName] = useState('');
@@ -11,7 +13,7 @@ function Music(props){
 
     const fetchData = async () => {
         try {
-          const response = await fetch("http://localhost:4000/api/getSong");
+          const response = await fetch(`${backendURL}api/getSong`);
           const data = await response.json();
           const { imageURL, songName, previewURL, artist} = data;
           setImageURL(imageURL);

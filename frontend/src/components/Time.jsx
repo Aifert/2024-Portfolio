@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 
+const backendURL = `https://portfolio-backend-tpxz.onrender.com/`
+
 function Time(){
     const[time, setTime] = useState("Loading...");
-
-
 
     useEffect(() => {
         const fetchData = async() => {
             try{
-                const response = await fetch("http://localhost:4000/api/getTime");
+                const response = await fetch(`${backendURL}api/getTime`);
                 const data = await response.json();
                 setTime(data.time);
             }

@@ -61,11 +61,11 @@ footer{
 }
 
 h2{
-    font-size : 1.6rem;
+    font-size : 1.2rem;
 }
 
 h3{
-    font-size : 1.25rem;
+    font-size : 1rem;
 }
 
 li{
@@ -88,10 +88,15 @@ li>li{
 
 /* Macbook */
 @media (max-width: 1600px) and (min-width : 390px) {
+  body{
+    overflow : hidden;
+  }
+
   .main {
       scale : 80%;
       margin-top : 200px;
       margin-bottom : 100px;
+      
   }
 }
 

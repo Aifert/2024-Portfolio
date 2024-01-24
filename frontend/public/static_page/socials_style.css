@@ -94,6 +94,9 @@ footer{
 
 /* Macbook */
 @media (max-width: 1600px) and (min-width : 430px) {
+  body{
+    overflow : hidden;
+  }
   .main {
       scale : 80%;
       margin-top : -100px;

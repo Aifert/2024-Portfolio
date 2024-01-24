@@ -113,14 +113,16 @@ li>li{
 
 @media (min-width : 1600px){
     .main{
-      margin-top : 800px;
+        scale : 80%;
+      margin-top : 200px;
     }
   }
   
   /* Macbook */
   @media (max-width: 1600px) and (min-width : 430px) {
     .main {
-        margin-top : 800px;
+        scale : 70%;
+        margin-top : 400px;
         margin-bottom : 100px;
     }
   }

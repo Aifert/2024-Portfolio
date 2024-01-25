@@ -38,7 +38,6 @@ body{
 
 
 .custom-hr{
-    width: 75%;
     margin: 0 auto;
     border: 0;
     height: 3px;
@@ -167,9 +166,9 @@ body{
 .languages{
   display : flex;
   justify-self: space-between;
-  max-width : 800px;
   margin : 50px auto;
 }
+
 
 .prog{
   display : grid;
@@ -231,3 +230,52 @@ body{
   margin-right: 5px; /* Optional: Add some space between the image and the text */
 }
 
+.frontend img{
+  width : 30px;
+  height : 30px;
+}
+
+.prog_lang {
+  margin-bottom: 20px; /* Add margin as needed */
+  margin-left : 20px;
+  margin-right : 20px;
+}
+
+.prog_lang .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin as needed */
+}
+
+.prog_lang .title span {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.prog_lang .title img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.prog_lang .title h3 {
+  margin: 0;
+}
+
+.prog_lang ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prog_lang ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.prog_lang ul li span {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.prog_lang ul li img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}

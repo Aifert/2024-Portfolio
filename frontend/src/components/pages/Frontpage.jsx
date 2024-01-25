@@ -6,7 +6,7 @@ function Frontpage(props){
         return (    
         <div>
         <ul className = "container guide">
-        <li className = "p-2"><a href = "./static_page/about.html">About</a></li>
+        <li className = "p-2"><a href = "#about">About</a></li>
         <li className = "p-2"><a href = "./static_page/socials.html">Socials</a></li>
         <li className = "p-2"><a href = "./static_page/education.html">Education</a></li>
         <li className = "p-2"><a href = "./static_page/commit.html">Competitions</a></li>

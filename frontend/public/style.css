@@ -405,3 +405,16 @@ h3{
 .certification{
   color : #56AE57;
 }
+
+.footers{
+  font-size : 1.5rem;
+}
+
+.contact{
+  display : flex;
+  flex-direction: column;
+}
+
+.resume{
+  font-size : 1.2rem;
+}

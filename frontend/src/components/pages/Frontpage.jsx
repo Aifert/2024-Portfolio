@@ -6,13 +6,12 @@ function Frontpage(props){
         return (    
         <div>
         <ul className = "container guide">
-        <li className = "p-2"><a href = "./static_page/about.html">About</a></li>
-        <li className = "p-2"><a href = "./static_page/socials.html">Socials</a></li>
-        <li className = "p-2"><a href = "./static_page/education.html">Education</a></li>
-        <li className = "p-2"><a href = "./static_page/commit.html">Competitions</a></li>
-        <li className = "p-2"><a href = "./static_page/work.html">Work Experience</a></li>
-        <li className = "p-2"><a href = "./static_page/project.html">Projects</a></li>
-        <li className = "p-2"><a href = "./static_page/skills.html">Skills</a></li>
+        <li className = "p-2"><a href = "#about">About</a></li>
+        <li className = "p-2"><a href = "#skills">Skills</a></li>
+        <li className = "p-2"><a href = "#competitions">Competitions</a></li>
+        <li className = "p-2"><a href = "#work">Work Experience</a></li>
+        <li className = "p-2"><a href = "#projects">Projects</a></li>
+        <li className = "p-2"><a href = "#socials">Socials</a></li>
         </ul></div>             
         );
     }

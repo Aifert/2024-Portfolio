@@ -1,8 +1,23 @@
 body{
+  background-color : #F3EEEA;
+}
+
+body *{
+  color : #776B5D;
+  font-family : "retro", sans-serif;
+                                                  
+}
+
+#projects *{
+  color : #776B5D;
+}
+
+.custom-container{
     display : flex;
     align-items : center;
-    height : 100vh;
+    flex-direction : column;
     background-color : #F3EEEA;
+    scale : 80%;
 }
 
 @font-face {
@@ -11,28 +26,32 @@ body{
 }
 
 
-.custom-container *{
-  color : #776B5D;
-  font-family : "retro", sans-serif;
-                                                  
-}
-
-
-
-.custom-container{
-  display : flex;
-  justify-content: center;
-}
-
-.main{
+.menu{
   background-color : #EBE3D5;
   width : 1000px;
-  scale : 70%;
 }
 
+.menu a{
+  font-size : 1.3rem;
+}
+
+.main *{
+  font-size : 1.4rem;
+}
+
+.main h1{
+  font-size : 2.5rem;
+}
+
+.main a{
+  font-size : 2rem;
+}
+
+.expand-button{
+  margin-top : 50px;
+}
 
 .custom-hr{
-    width: 75%;
     margin: 0 auto;
     border: 0;
     height: 3px;
@@ -59,6 +78,7 @@ body{
   }
   
 
+
 .btn{
   color : #EBE3D5;
   height : 50px;
@@ -68,7 +88,6 @@ body{
 
 .guide{
     list-style : none;
-    font-size : 1.4rem;
 }
 
 .guide > li > a{
@@ -78,12 +97,13 @@ body{
 
 @media (max-width: 1600px) and (min-width : 430px) {
 
-  .main {
+  .custom-container {
       scale : 60%;
       margin-top : -200px;
       margin-bottom : -200px;
       width : 1000px;
   }
+
 }
 
 @media (max-width : 430px){
@@ -152,4 +172,236 @@ body{
   
 }
 
+h1{
+  font-size : 1.5rem;
+}
 
+h2{
+  font-size : 1.2rem;
+}
+
+h3{
+  font-size : 1rem;
+}
+
+.time > h3{
+  font-size : 1.7rem;
+}
+
+.content{
+  padding : 50px;
+  padding-left : 40px;
+  padding-right : 40px;
+  background-color: #EBE3D5;
+}
+
+.languages{
+  display : flex;
+  justify-self: space-between;
+  padding-left : 50px;
+  padding-right : 100px;
+}
+
+
+.prog{
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap : 20px;
+  margin : 50px auto;
+}
+
+.prog li{
+  list-style-type : none;
+}
+
+.speak{
+  background-color: #EBE3D5;
+  width : 300px;
+  padding : 30px;
+}
+
+.speak li {
+  list-style-type: none; /* To remove default list-style-type */
+  padding-left: 20px; /* Add some padding to the left to make room for the image */
+  line-height: 16px; /* Adjust the line height to vertically align the text */
+  display: flex; /* Use flexbox for vertical centering */
+  align-items: center; /* Align items vertically center */
+  margin-bottom: 5px; /* Add some margin between list items */
+}
+
+.speak .english::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/uk.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .chinese::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/china.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .malay::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/malaysia.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .japanese::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/japan.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.frontend img{
+  width : 30px;
+  height : 30px;
+}
+
+.prog_lang {
+  margin-bottom: 20px; /* Add margin as needed */
+  margin-left : 20px;
+  margin-right : 20px;
+  background-color: #EBE3D5;
+  padding : 20px;
+}
+
+.prog_lang .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin as needed */
+}
+
+.prog_lang .title span {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.prog_lang .title img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+.prog_lang .title h3 {
+  margin: 0;
+}
+
+.prog_lang ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.prog_lang ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.prog_lang ul li span {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.prog_lang ul li img {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+}
+
+
+.cardgrid {
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size as needed */
+  gap: 50px;
+  place-items:center;
+}
+
+.card{
+  min-width : 200px;
+  min-height : 400px;
+}
+
+.grid-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.perth{
+  font-weight : bold;
+  color : #D99E30;
+}
+
+.grid-item a{
+  text-decoration: none;
+}
+
+.grid-item img{
+  height : 30px;
+  width : 30px;
+}
+
+.socials{
+  display : flex;
+  justify-content: space-between;
+  gap : 50px;
+}
+
+.uni{
+  font-weight : bold;
+  color : #779ecb;
+}
+
+/* CSS adjustments for smaller screens */
+
+/* Desktop */
+
+@media (min-width : 1600px){
+  .alic{
+    padding-left : 100px;
+    padding-right : 100px;
+  }
+
+
+}
+
+/* Macbook */
+@media (max-width: 1600px) and (min-width : 430px) {
+}
+
+/* Phone */
+
+@media (max-width : 430px){
+  .main{
+    scale : 70%;
+    margin-top : 400px;
+    margin-bottom : 100px;
+  }
+
+}
+
+
+#skills h3{
+  color : #D99E30
+}
+
+#skills .bottom{
+  color : #779ecb;
+}
+
+.certification{
+  color : #56AE57;
+}

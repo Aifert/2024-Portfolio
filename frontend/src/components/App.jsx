@@ -12,19 +12,19 @@ function App(){
     
     return (
     <div>
-        <div>
-        <h1 class="mt-3">Aifert Yet</h1>
+        <div className="main">
+        <h1 className="mt-3">Aifert Yet</h1>
         <Time />
-        <h4 class = "location"> PERTH, WA</h4>
-        <hr class = "mt-5 mb-5 custom-hr" />
-        <div class = "container content text-center"></div>
+        <h4 className = "location"> PERTH, WA</h4>
+        <hr className = "mt-5 mb-5 custom-hr" />
+        <div className = "container text-center"></div>
         <Music expand = {!isClicked}/>
-        {isClicked ? undefined :<img onClick={handleonclick} className = "button dropdown mt-5" src={process.env.PUBLIC_URL + '/images/button-arrow-expand-1-64.png'} alt="Button" />}
+        {isClicked ? undefined :<img onClick={handleonclick} className = "button dropdown expand-button" src={process.env.PUBLIC_URL + '/images/button-arrow-expand-1-64.png'} alt="Button" />}
         <Frontpage expand = {isClicked}/>
         {isClicked ? 
         <img
             onClick={handleonclick}
-            className={`button up mt-5 ${isClicked ? 'rotate' : ''}`}
+            className={`expand-button ${isClicked ? 'rotate' : ''}`}
             src={process.env.PUBLIC_URL + '/images/button-arrow-expand-1-64.png'}
             alt="Button"
         /> :

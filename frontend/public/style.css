@@ -8,13 +8,16 @@ body *{
                                                   
 }
 
+#projects *{
+  color : #776B5D;
+}
+
 .custom-container{
     display : flex;
     align-items : center;
     flex-direction : column;
-    height : 100vh;
-    width : 100vw;
     background-color : #F3EEEA;
+    scale : 80%;
 }
 
 @font-face {
@@ -23,21 +26,30 @@ body *{
 }
 
 
-
-
-
-
-.custom-container{
-  display : flex;
-  justify-content: center;
-}
-
-.main{
+.menu{
   background-color : #EBE3D5;
   width : 1000px;
-  scale : 70%;
 }
 
+.menu a{
+  font-size : 1.3rem;
+}
+
+.main *{
+  font-size : 1.4rem;
+}
+
+.main h1{
+  font-size : 2.5rem;
+}
+
+.main a{
+  font-size : 2rem;
+}
+
+.expand-button{
+  margin-top : 50px;
+}
 
 .custom-hr{
     margin: 0 auto;
@@ -66,6 +78,7 @@ body *{
   }
   
 
+
 .btn{
   color : #EBE3D5;
   height : 50px;
@@ -82,14 +95,15 @@ body *{
 }
 
 
-/* @media (max-width: 1600px) and (min-width : 430px) {
+@media (max-width: 1600px) and (min-width : 430px) {
 
-  .main {
+  .custom-container {
       scale : 60%;
       margin-top : -200px;
       margin-bottom : -200px;
       width : 1000px;
   }
+
 }
 
 @media (max-width : 430px){
@@ -98,7 +112,7 @@ body *{
     margin-bottom : -200px;
     margin-top : -200px;
   }
-} */
+}
 
 #root .button{
   cursor : pointer;
@@ -158,16 +172,34 @@ body *{
   
 }
 
-.about{
-  display : flex;
-  justify-content: start;
+h1{
+  font-size : 1.5rem;
 }
 
+h2{
+  font-size : 1.2rem;
+}
+
+h3{
+  font-size : 1rem;
+}
+
+.time > h3{
+  font-size : 1.7rem;
+}
+
+.content{
+  padding : 50px;
+  padding-left : 40px;
+  padding-right : 40px;
+  background-color: #EBE3D5;
+}
 
 .languages{
   display : flex;
   justify-self: space-between;
-  margin : 50px auto;
+  padding-left : 50px;
+  padding-right : 100px;
 }
 
 
@@ -180,6 +212,12 @@ body *{
 
 .prog li{
   list-style-type : none;
+}
+
+.speak{
+  background-color: #EBE3D5;
+  width : 300px;
+  padding : 30px;
 }
 
 .speak li {
@@ -240,6 +278,8 @@ body *{
   margin-bottom: 20px; /* Add margin as needed */
   margin-left : 20px;
   margin-right : 20px;
+  background-color: #EBE3D5;
+  padding : 20px;
 }
 
 .prog_lang .title {
@@ -292,10 +332,76 @@ body *{
 
 .card{
   min-width : 200px;
-  min-height : 500px;
+  min-height : 400px;
 }
 
 .grid-container{
   display: flex;
   justify-content: space-between;
+}
+
+.perth{
+  font-weight : bold;
+  color : #D99E30;
+}
+
+.grid-item a{
+  text-decoration: none;
+}
+
+.grid-item img{
+  height : 30px;
+  width : 30px;
+}
+
+.socials{
+  display : flex;
+  justify-content: space-between;
+  gap : 50px;
+}
+
+.uni{
+  font-weight : bold;
+  color : #779ecb;
+}
+
+/* CSS adjustments for smaller screens */
+
+/* Desktop */
+
+@media (min-width : 1600px){
+  .alic{
+    padding-left : 100px;
+    padding-right : 100px;
+  }
+
+
+}
+
+/* Macbook */
+@media (max-width: 1600px) and (min-width : 430px) {
+}
+
+/* Phone */
+
+@media (max-width : 430px){
+  .main{
+    scale : 70%;
+    margin-top : 400px;
+    margin-bottom : 100px;
+  }
+
+}
+
+
+#skills h3{
+  color : #D99E30
+}
+
+#skills .bottom{
+  color : #779ecb;
+}
+
+.certification{
+  color : #56AE57;
 }

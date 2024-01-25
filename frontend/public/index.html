@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content border border-dashed rounded-5="width=device-width, initial-scale=1" />
     <link rel = "icon" type = "image/x-icon" href = "./images/favicon.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 
   <body>
       <div class="container custom-container">
-          <div class="main position-relative p-5 text-center text-muted border border-dashed rounded-5">
+          <div class="menu  position-relative p-5 text-center text-muted border border-dashed rounded-5">
               <div id="root">
               </div>
               <hr class = "mt-5 mb-3 custom-hr" />
@@ -30,12 +30,12 @@
             <div class="position-relative p-5 text-start text-muted">
                 <h1>About Me</h1>
                 <hr class = "mt-3 mb-5 custom-hr" />
-                <p>Hi, my name is Aifert Yet.</p>
+                <div class = "alic">
+                <div class ="content border border-dashed rounded-5">
+                  <p>Hi, my name is Aifert Yet.</p>
                 <br />
-                <p>I am a 20 year old aspiring Software Engineer based in <span>Perth, Western Australia.</span>
-                  Currently, I am studying my 3rd year of Software Engineering (Honours) at the University of Western Australia.
-                <p> Being a naturally curious person, ever since coming in contact with programming, there hasn't been a day where I am not amazed
-                  by the vast collections of things I can create, or people's life I can change for the better.
+                <p>I am a 20 year old aspiring Software Engineer based in <span class="perth">Perth, Western Australia.</span>
+                  Currently , I am studying my 3rd year of Software Engineering (Honours) at the <span class ="uni"> University of Western Australia.</span></p>
                 <p>I am a fullstack developer with experience from frontend in HTML, CSS, JavaScript and ReactJS, and experience from backend in PostgreSQL and NodeJS</p>
                 </p>
                 <br/>
@@ -44,18 +44,23 @@
                 you just gotta take it all in and do what's right, continue to grow, continue to live in the moment. - 
                 Antonio Brown.
                 </p>
+                </div>                  
+                </div>
+                
           </div>
         </div>
+      </div>
         
       <div id = "skills">
-        <div class=" commit-container">
+        <div >
           <div class="position-relative p-5 text-start text-muted">
               <h1>Skills</h1>
               <hr class = "mt-3 mb-5 custom-hr" />
-              <div class = "languages">
+              <div class = "alic">
+<div class = "languages">
                 <div class = "container">
                   <h2 class = "name mb-5">Languages</h2>
-                  <ul class="speak">
+                  <ul class="speak border border-dashed rounded-5 ">
                       <li class="english">English</li>
                       <li class="chinese">Chinese</li>
                       <li class="malay">Melayu</li>
@@ -65,10 +70,10 @@
               <div class = "container">
                   <h2 class = "name">Programming Languages</h2>
                   <div class="prog">
-                    <div class = "prog_lang frontend">
+                    <div class = "prog_lang  border border-dashed rounded-5 frontend">
                       <div class="title">
                         <span><img src="/images/ui.png" alt="UI Image"></span>
-                        <h3>Frontend</h3>
+                        <h3 >Frontend</h3>
                     </div>
                       <ul>
                         <li>HTML</li>
@@ -79,7 +84,7 @@
                       <ul>
                       </ul>
                     </div>
-                    <div class = "prog_lang backend">
+                    <div class = "prog_lang  border border-dashed rounded-5 backend">
                       <div class="title">
                         <span><img src="/images/backend.png" alt="UI Image"></span>
                         <h3>Backend</h3>
@@ -89,30 +94,30 @@
                         <li>API Integration</li>
                       </ul>
                     </div>
-                    <div class = "prog_lang database">
+                    <div class = "prog_lang  border border-dashed rounded-5 database">
                       <div class="title">
                         <span><img src="/images/database.png" alt="UI Image"></span>
-                        <h3>Database</h3>
+                        <h3 >Database</h3>
                     </div>
                       <ul>
                         <li>PostgreSQL</li>
                         <li>SQLite</li>
                       </ul>
                     </div>
-                    <div class = "prog_lang version-control">
+                    <div class = "prog_lang  border border-dashed rounded-5 version-control">
                       <div class="title">
                         <span><img src="/images/version-control.png" alt="UI Image"></span>
-                        <h3>Version Control</h3>
+                        <h3 class="bottom">Version Control</h3>
                     </div>
                       <ul>
                         <li>Git CLI</li>
                         <li>Github</li>
                       </ul>
                     </div>
-                    <div class = "prog_lang android">
+                    <div class = "prog_lang  border border-dashed rounded-5 android">
                       <div class="title mb-5">
                         <span><img src="/images/android.png" alt="UI Image"></span>
-                        <h3>Android</h3>
+                        <h3 class="bottom">Android</h3>
                     </div>
                       <ul>
                         <li>
@@ -120,22 +125,24 @@
                         </li>
                       </ul>
                     </div>
-                    <div class = "prog_lang misc">
+                    <div class = "prog_lang  border border-dashed rounded-5 misc">
                       <div class="title">
                         <span><img src="/images/programing.png" alt="UI Image"></span>
-                        <h3>Other Languages</h3>
+                        <h3 class="bottom">Other Languages</h3>
                     </div>
                       <ul>
                         <li>C</li>
                         <li>Python</li>
                       </ul>
-                    </div>
+                    </div>                
+              </div>
+              
                   </div>
               </div>                
               </div>
               
               <div class = "mb-5">
-                  <h2 class = "name">Certifications</h2>
+                  <h2 class = "certification">Certifications</h2>
                       <li>AWS Certified Cloud Practitioner   <a href = "https://www.credly.com/badges/fce2fa6b-c124-4d60-9e29-2f21f5cccdc9/public_url">(Certificate)</a></li>
                   </ul>
               </div>
@@ -149,8 +156,9 @@
           <div class=" position-relative p-5 text-start text-muted">
               <h1>Competitions / Volunteers</h1>
               <hr class = "mt-3 mb-5 custom-hr" />
-              <div class = "mb-5">
-                  <h2 class = "name">2023 ComSSA Hackathon(Astro Renaissance)                    </h2>
+              <div class ="alic">
+                <div class = "mb-5 content border border-dashed rounded-5">
+                  <h2 class = "name">2023 ComSSA Hackathon(Astro Renaissance) </h2>
                   <h3 class = "role">Leader</h3>
                   <ul>
                       <li>Our team's prompt was Alien Documentation, where we focused on improving effectiveness of Alien research with existing systems.</li>
@@ -159,6 +167,8 @@
                       <li>Developed a strong desire to learn when faced with unconventional challenges.</li>
                   </ul>
               </div>
+              </div>
+             
         </div>
       </div>
 
@@ -167,7 +177,8 @@
           <div class="position-relative p-5 text-start text-muted">
               <h1>Work Experience</h1>
               <hr class = "mt-3 mb-5 custom-hr" />
-              <div class = "mb-5">
+              <div class ="alic">
+                  <div class = "mb-5 content border border-dashed rounded-5">
                   <h2 class = "name">Asian Golden Wok <span class = "location">(Perth, Western Australia)</span></h2>
                   <a href = "https://www.google.com/maps/place/Asian+Golden+Wok/@-31.9026852,115.7996227,15z/data=!4m2!3m1!1s0x0:0x62b7ab927093ab45?sa=X&ved=2ahUKEwj85Ij4grmCAxXtyDgGHRa_ArcQ_BJ6BAhMEAA">AGW Innaloo</a>
                   <h3 class = "duration">2022 - Present</h3>
@@ -178,18 +189,31 @@
                       <li>Handled up to 3,500AUD in transactions everyday</li>
                       <li>Handled online orders from more than 4 delivery partners</li>
                   </ul>
+                  </div>
+                  <div class = "mb-5 content border border-dashed rounded-5">
+                    <h2 class = "name">Freelance Web Developer<span class = "location"> (Perth, Western Australia)</span></h2>
+                    <h3 class = "duration">2022 - 2023</h3>
+                    <h3 class = "position">Web Developer</h3>
+                    <ul>
+                        <li>Simplified ordering processes with an online QR Code ordering system.</li>
+                        <li>Seamlessly integrated 10+ customization options to a specific dish online.</li>
+                        <li>Reduced more than 100+ mistakes in orders and reduced order turnaround time by 20%.</li>
+                        <li>Built using Shopify, customized with HTML and CSS</li>
+                    </ul>
+                    </div>
+                    <div class = "mb-5 content border border-dashed rounded-5">
+                        <h2 class = "name">BokiNFT Project Development
+                            <span class = "location">(Remote. Head Office in Venice, California)</span></h2>       
+                        <h3 class = "duration">2022-2022</h3>
+                        <h3 class = "position">Assistant Programmer and Cyber Security Staff</h3>
+                        <ul>
+                            <li>Coordinated techical requirements for projects with internal and external stakeholders</li>
+                            <li>Generated revenue of over 800ETH, worth over 4 Million AUD in 2022</li>
+                            <li>Participated in various testing before deploying the official contract ensuring no issues arise</li>
+                        </ul>
+                    </div>                
               </div>
-              <div class = "mb-5">
-                  <h2 class = "name">BokiNFT Project Development
-                      <span class = "location">(Remote. Head Office in Venice, California)</span></h2>       
-                  <h3 class = "duration">2022-2022</h3>
-                  <h3 class = "position">Assistant Programmer and Cyber Security Staff</h3>
-                  <ul>
-                      <li>Coordinated techical requirements for projects with internal and external stakeholders</li>
-                      <li>Generated revenue of over 800ETH, worth over 4 Million AUD in 2022</li>
-                      <li>Participated in various testing before deploying the official contract ensuring no issues arise</li>
-                  </ul>
-              </div>
+              
         </div>
       </div>
       </div>
@@ -199,7 +223,7 @@
           <div class=" position-relative p-5 text-start text-muted">
               <h1>Projects</h1>
               <hr class = "mt-3 mb-5 custom-hr" />
-              <div class = "center">
+              <div class = "center alic">
                   <div class = "cardgrid">
                       <div class="card" >
                           <div id="carousel1" class="carousel slide">
@@ -355,12 +379,15 @@
               <hr class = "mt-5 mb-3 custom-hr" />
               <div class="footer">
               <div class = "grid-container">
-                <footer>© 2023 Aifert @ YuenStudio </footer>    
-                <div class = "grid-item"><a href = "https://github.com/Aifert"><img src = "../images/github.svg" class = "me-2" alt = "github">Github</a></div>
-                <div class = "grid-item"><a href = "https://www.linkedin.com/in/aifert-yet-a2147a227/"><img src = "../images/linkedin.svg" class = "me-2" alt = "linkedin">LinkedIn</a></div>
-                <div class = "grid-item"><a href = "https://www.facebook.com/aifert.yetzhuyuen/"><img src = "../images/facebook.svg" class = "me-2" alt = "facebook">Facebook</a></div>
-                <div class = "grid-item"><a href = "https://www.instagram.com/aifertyet/"><img src = "../images/instagram (1).svg" class = "me-2" alt = "instagram">Instagram</a></div>
-                <div class = "grid-item"><a href = "https://twitter.com/yelaoshiETH"><img src = "../images/twitter-x.svg" class = "me-2" alt = "twitter-x">Twitter</a></div>
+                <footer >© 2023 Aifert @ YuenStudio </footer>    
+                <div class ="socials">
+                <div class = "grid-item"><a href = "https://github.com/Aifert"><img src = "../images/github.svg" class = "me-2" alt = "github"></a></div>
+                <div class = "grid-item"><a href = "https://www.linkedin.com/in/aifert-yet-a2147a227/"><img src = "../images/linkedin.svg" class = "me-2" alt = "linkedin"></a></div>
+                <div class = "grid-item"><a href = "https://www.facebook.com/aifert.yetzhuyuen/"><img src = "../images/facebook.svg" class = "me-2" alt = "facebook"></a></div>
+                <div class = "grid-item"><a href = "https://www.instagram.com/aifertyet/"><img src = "../images/instagram (1).svg" class = "me-2" alt = "instagram"></a></div>
+                <div class = "grid-item"><a href = "https://twitter.com/yelaoshiETH"><img src = "../images/twitter-x.svg" class = "me-2" alt = "twitter-x"></a></div>                  
+                </div>
+                
               </div>
               </div>
 

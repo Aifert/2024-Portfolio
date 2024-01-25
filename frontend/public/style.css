@@ -279,3 +279,22 @@ body{
   width: 30px; /* Adjust the width as needed */
   height: 30px; /* Adjust the height as needed */
 }
+
+
+.cardgrid {
+  display: grid;
+  grid-template-columns : 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size as needed */
+  gap: 50px;
+  place-items:center;
+}
+
+.card{
+  min-width : 200px;
+  min-height : 500px;
+}
+
+.grid-container{
+  display: flex;
+  justify-content: space-between;
+}

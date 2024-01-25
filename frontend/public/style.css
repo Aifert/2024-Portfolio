@@ -162,3 +162,72 @@ body{
   display : flex;
   justify-content: start;
 }
+
+
+.languages{
+  display : flex;
+  justify-self: space-between;
+  max-width : 800px;
+  margin : 50px auto;
+}
+
+.prog{
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap : 20px;
+  margin : 50px auto;
+}
+
+.prog li{
+  list-style-type : none;
+}
+
+.speak li {
+  list-style-type: none; /* To remove default list-style-type */
+  padding-left: 20px; /* Add some padding to the left to make room for the image */
+  line-height: 16px; /* Adjust the line height to vertically align the text */
+  display: flex; /* Use flexbox for vertical centering */
+  align-items: center; /* Align items vertically center */
+  margin-bottom: 5px; /* Add some margin between list items */
+}
+
+.speak .english::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/uk.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .chinese::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/china.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .malay::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/malaysia.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+
+.speak .japanese::before {
+  content: ""; /* Required for the ::before pseudo-element to generate content */
+  display: inline-block; /* Make the pseudo-element inline-block */
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  background-image: url('/images/japan.png'); /* Set the background image */
+  background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+  margin-right: 5px; /* Optional: Add some space between the image and the text */
+}
+

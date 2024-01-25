@@ -2,6 +2,12 @@ body{
   background-color : #F3EEEA;
 }
 
+body *{
+  color : #776B5D;
+  font-family : "retro", sans-serif;
+                                                  
+}
+
 .custom-container{
     display : flex;
     align-items : center;
@@ -17,11 +23,7 @@ body{
 }
 
 
-.custom-container *{
-  color : #776B5D;
-  font-family : "retro", sans-serif;
-                                                  
-}
+
 
 
 
@@ -73,7 +75,6 @@ body{
 
 .guide{
     list-style : none;
-    font-size : 1.4rem;
 }
 
 .guide > li > a{
@@ -81,7 +82,7 @@ body{
 }
 
 
-@media (max-width: 1600px) and (min-width : 430px) {
+/* @media (max-width: 1600px) and (min-width : 430px) {
 
   .main {
       scale : 60%;
@@ -97,7 +98,7 @@ body{
     margin-bottom : -200px;
     margin-top : -200px;
   }
-}
+} */
 
 #root .button{
   cursor : pointer;

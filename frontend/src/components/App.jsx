@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Frontpage from "./pages/Frontpage.jsx";
 import Music from "./Music.jsx";
 import Time from "./Time.jsx";
-import About from "./pages/About.jsx";
 
 function App(){
     const [isClicked, setisClicked] = useState(false);
@@ -32,9 +31,6 @@ function App(){
         undefined
         }
         </div>        
-        {/* <div id="about">
-            <About />
-        </div> */}
     </div>
 
     );

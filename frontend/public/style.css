@@ -178,7 +178,7 @@ h3{
 
 .languages{
   display : flex;
-  justify-self: space-between;
+  justify-content: space-between;
   padding-left : 50px;
   padding-right : 100px;
 }
@@ -362,20 +362,69 @@ h3{
 
 /* } */
 
-@media (min-width : 1600px) and (min-width : 430px){
+@media (min-width : 1600px){
   .alic{
     padding-left : 100px;
     padding-right : 100px;
   }
 
+    .custom-container {
+      scale : 60%;
+      margin-top : -200px;
+      margin-bottom : -200px;
+      width : 1000px;
+  }
 
 }
 
 /* Phone */ 
 @media (max-width : 430px){
+  .custom-container {
+    scale : 60%;
+    width : 100px;
+  }
+
+  .languages{
+    display : flex;
+    justify-content : space-between;
+    flex-direction : column;
+  }
+
+  .prog{
+    display : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap : 5px;
+    margin : 50px auto;
+  }
+
+  #skills{
+    text-align : center;
+    padding : 50px 0;
+  }
+
+  .languages, .prog_lang{
+    display : inline-block;
+    text-align : left;
+    margin : 0 auto;
+  }
+
+  .cardgrid {
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr)); /* Adjust column size as needed */
+    gap: 50px;
+    place-items:center;
+  }  
+
+
 }
 
 
+.custom-container {
+  scale : 60%;
+  margin-top : -220px;
+  width : 1000px;
+}
 
 #skills h3{
   color : #D99E30

@@ -369,10 +369,13 @@ h3{
   }
 
     .custom-container {
-      scale : 60%;
-      margin-top : -200px;
       margin-bottom : -200px;
       width : 1000px;
+  }
+
+  .menu{
+    scale : 110%;
+    margin-top : 100px;
   }
 
 }

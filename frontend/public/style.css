@@ -410,6 +410,10 @@ h3{
 /* Phone */ 
 @media (max-width : 430px){
 
+  #about, #skills, #competitions, #projects .card-body{
+    font-size : 11px;
+  }
+
   .custom-container{
     margin-left : 210px;
     width : 50%;

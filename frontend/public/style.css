@@ -306,7 +306,7 @@ h3{
 .cardgrid {
   display: grid;
   grid-template-columns : 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr)); /* Adjust column size as needed */
+  grid-template-rows: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 50px;
   place-items:center;
 }
@@ -405,98 +405,90 @@ h3{
     margin-top : 100px;
   }
 
+  .card{
+  min-width : 200px;
+  min-height : 400px;
+}
+
+
 }
 
 /* Phone */ 
 @media (max-width : 430px){
 
-  #about, #skills, #competitions, #projects .card-body{
-    font-size : 11px;
+  *{
+    font-size : 10px;
   }
+
 
   .custom-container{
-    margin-left : 210px;
-    width : 50%;
-    margin-bottom : -240px;
+    margin-top : -120px;
+    margin-bottom : -150px;
+    width : auto;
   }
-
-  .content, .speak {
-    transform : scale(0.9);
-    padding : 30px;
-  }
-
-  .speak{
-    margin-bottom : 50px;
-    margin-left : -30px;
-  }
-
   .menu{
-    width : 500px;
-    margin-left : -400px;
+    width : 400px;
+    padding : 0px 20px 0px 20px;
   }
 
   .languages{
     display : flex;
-    justify-content : space-between;
     flex-direction : column;
+    width : auto;
+    padding : 0;
   }
 
-  .prog{
+  .languages .prog{
     display : grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap : 5px;
-    transform : scale(0.8);
-    margin-left : -75px;
+    grid-template-columns : repeat(2, 1fr);
+    gap : 1px;
   }
 
-  #skills{
-    text-align : center;
-    padding : 50px 0;
+
+  .cardgrid{
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+    place-items : start;
   }
 
-  .languages{
-    margin-left: -50px;
+  .card{
+    min-width : auto;
+    min-height : 500px;
+  }
+
+  .grid-container{
+    display : flex;
+    justify-content : space-between;
+    gap : 50px;
+  }
+
+  .card-description{
+    font-size : 7px;
+  }
+  
+  .card-body > .button{
+    display : flex;
+    justify-content: center;
+  }
+
+  .oral-language{
+    display : flex;
+    justify-content: center;
   }
 
   .grid-item img{
-    height : 20px;
-    width : 20px;
+    height : 25px;
+    width : 25px;
   }
-
 
   .socials{
-    display : grid;
-    grid-template-columns : 1fr 1fr;
-    gap : 40px;
-    place-items: center;
+    gap : 20px;
   }
 
-  .twitter{
-    display : none;
-  }
-
-  /* Add this CSS to your stylesheet */
-
-
-  .cardgrid {
-    display: grid;
-    grid-template-columns : 1fr 1fr;
-    grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr)); /* Adjust column size as needed */
-    gap: 30px;
-    place-items:center;
-    transform : scale(0.8);
-    margin-left : -75px;
-  }  
-
-  .card-description li{
-    display : none !important; 
-  }
-
-  body{
-    overflow-x : hidden;
+  .content{
     padding : 20px;
   }
-
 
 }
 

@@ -490,5 +490,10 @@ h3{
     padding : 20px;
   }
 
+  .programminglanguages{
+    display : flex;
+    justify-content: center;
+  }
+
 }
 

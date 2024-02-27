@@ -346,6 +346,11 @@ h3{
   color : #779ecb;
 }
 
+.projectlinks{
+  text-decoration : none;
+  color : #779ecb !important;
+}
+
 /* CSS adjustments for smaller screens */
 
 /* Desktop */
@@ -388,6 +393,7 @@ h3{
 .footers{
   font-size : 1.3rem;
 }
+
 
 @media (min-width : 1600px){
   .alic{

@@ -5,7 +5,7 @@ body{
 body *{
   color : #776B5D;
   font-family : "retro", sans-serif;
-                                                  
+
 }
 
 #projects *{
@@ -55,7 +55,7 @@ body *{
     margin: 0 auto;
     border: 0;
     height: 3px;
-    background-color: black; 
+    background-color: black;
 }
 
 .gradient-background {
@@ -64,7 +64,7 @@ body *{
     animation: gradient-animation 20s ease infinite;
     color : white;
   }
-  
+
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -76,7 +76,7 @@ body *{
       background-position: 0% 50%;
     }
   }
-  
+
 
 
 .btn{
@@ -150,7 +150,7 @@ body *{
   100%{
     transform : rotate(360deg);
   }
-  
+
 }
 
 h1{
@@ -193,6 +193,19 @@ h3{
 
 .prog li{
   list-style-type : none;
+}
+
+.devops ul {
+  list-style-type : none;
+  display : grid;
+  padding-left : 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.devops li{
+  padding : 3px;
+  list-style-type: none;
+  text-align: center;
 }
 
 .speak{
@@ -302,6 +315,27 @@ h3{
   height: 30px; /* Adjust the height as needed */
 }
 
+.devops {
+  margin-bottom: 20px; /* Add margin as needed */
+  margin-left : 20px;
+  margin-right : 20px;
+  background-color: #EBE3D5;
+  padding : 20px;
+  display : flex;
+  flex-direction :column;
+  border-radius : 10px;
+}
+
+.devops.bottom{
+  text-align: center;
+}
+
+
+.devops-title{
+  display : flex;
+  justify-content: center;
+  align-items : center;
+}
 
 .cardgrid {
   display: grid;
@@ -350,6 +384,8 @@ h3{
   text-decoration : none;
   color : #779ecb !important;
 }
+
+
 
 /* CSS adjustments for smaller screens */
 
@@ -419,7 +455,7 @@ h3{
 
 }
 
-/* Phone */ 
+/* Phone */
 @media (max-width : 430px){
 
   *{
@@ -472,7 +508,7 @@ h3{
   .card-description{
     font-size : 7px;
   }
-  
+
   .card-body > .button{
     display : flex;
     justify-content: center;

@@ -33,5 +33,3 @@ For questions, concerns, or feedback, please open an issue in our [GitHub reposi
 ## Privacy and Security
 
 Learn more about our commitment to privacy and security by reviewing our [Privacy Policy](#).
-
-Thank you for choosing HealthTrack – your open-source partner in health and wellness!

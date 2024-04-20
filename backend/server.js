@@ -8,9 +8,21 @@ const app = express();
 const port = 4000;
 const timeUrl = "https://timeapi.io/api/Time/current/zone";
 
+const day_int_map ={
+    "Monday" : 1,
+    "Tuesday" : 2,
+    "Wednesday" : 3,
+    "Thursday" : 4,
+    "Friday" : 5,
+    "Saturday" : 6,
+    "Sunday" : 7
+}
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static('public'));
+
+let num;
 
 function generateRandomNumber(max_number) {
     return Math.floor(Math.random() * max_number);
@@ -35,7 +47,12 @@ async function getAccessToken() {
 
 async function getTracks(access_token) {
     try {
-        const response = await axios.get(`https://api.spotify.com/v1/playlists/${process.env.playlistID}`, {
+        if(!num){
+            const response = await axios.get(`${timeUrl}?timeZone=Australia/Perth`);
+            const { dayOfWeek } = response.data;
+            num = day_int_map[dayOfWeek]
+        }
+        const response = await axios.get(`https://api.spotify.com/v1/playlists/${process.env[`playlistID${num}`]}`, {
             headers: {
                 'Authorization': `Bearer ${access_token}`
             }
@@ -43,22 +60,20 @@ async function getTracks(access_token) {
         return response.data.tracks.items;
     } catch (error) {
         console.error(error.message);
+        console.log(error.message);
         throw new Error('Failed to get tracks');
     }
 }
 
 async function getRandomSong(tracks) {
     let randomSong = tracks[generateRandomNumber(tracks.length)];
-    while (randomSong.track.album === null || randomSong.track.name === null || randomSong.track.preview_url === null) {
-        randomSong = tracks[generateRandomNumber(tracks.length)];
-    }
     return randomSong.track;
 }
 
 app.get("/api/getTime", async (req, res) => {
     try {
         const response = await axios.get(`${timeUrl}?timeZone=Australia/Perth`);
-        const { hour, minute, seconds } = response.data;
+        const { hour, minute, seconds} = response.data;
         const time = `${hour} : ${minute < 10 ? '0' : ''}${minute} : ${seconds < 10 ? '0' : ''}${seconds}`;
         res.json({ time });
     } catch (error) {

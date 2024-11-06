@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const backendURL = `https://portfolio-backend-tpxz.onrender.com/`
+const backendURL = `https://portfolio-eta-six-48.vercel.app/`
 
 function Music(props){
     const [imageURL, setImageURL] = useState(`${process.env.PUBLIC_URL}/images/verdy-removebg-preview.png`);
@@ -43,7 +43,7 @@ function Music(props){
             audio.play();
           }
         }
-    
+
         setPlay(!play);
       };
 
@@ -63,11 +63,11 @@ function Music(props){
       }
       fetchData();
     }
-    
+
     if(props.expand){
         return (
         <div className="record">
-            <div className="recordCard mb-3"> 
+            <div className="recordCard mb-3">
                 <img src={imageURL} alt="albumURL"/>
             </div>
             <p>Currently listening to... </p>
@@ -86,14 +86,14 @@ function Music(props){
             }} >{preview}</button>
             <button className = "button mx-2" onClick={handleNext}>Next</button>
             </div>
-            
+
         </div>
     )
     }
     else{
         return null;
     }
-    
+
 }
 
 export default Music;

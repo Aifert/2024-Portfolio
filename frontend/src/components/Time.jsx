@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 
-const backendURL = `https://portfolio-backend-tpxz.onrender.com/`
+const backendURL = `https://portfolio-eta-six-48.vercel.app/`
 
 function Time(){
     const[time, setTime] = useState("Loading...");
@@ -21,12 +21,12 @@ function Time(){
             fetchData();
 
             const intervalId = setInterval(fetchData, 1000);
-    
+
             return () => clearInterval(intervalId);
         }, 500);
 
         return () => clearTimeout(delayId);
-        
+
     }, []);
 
     return(
@@ -35,6 +35,6 @@ function Time(){
             <h4 className = "mb-5"> Current Time for Me </h4>
         </div>
     )
-}  
+}
 
 export default Time;

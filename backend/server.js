@@ -5,7 +5,7 @@ import cors from "cors";
 import 'dotenv/config';
 
 const app = express();
-const port = 4000;
+const port = 4000 || process.env.PORT;
 const timeUrl = "https://timeapi.io/api/Time/current/zone";
 
 const day_int_map ={

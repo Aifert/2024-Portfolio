@@ -52,7 +52,7 @@ async function getTracks(access_token) {
             const { dayOfWeek } = response.data;
             num = day_int_map[dayOfWeek]
         }
-        const response = await axios.get(`https://api.spotify.com/v1/playlists/${process.env[`playlistID${num}`]}`, {
+        const response = await axios.get(`https://api.spotify.com/v1/playlists/${process.env[`playlistID1`]}`, {
             headers: {
                 'Authorization': `Bearer ${access_token}`
             }

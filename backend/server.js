@@ -7,6 +7,7 @@ import 'dotenv/config';
 const app = express();
 const port = 4000 || process.env.PORT;
 const timeUrl = "https://timeapi.io/api/Time/current/zone";
+const deezerUrl = "https://api.deezer.com";
 
 const day_int_map ={
     "Monday" : 1,
@@ -45,6 +46,23 @@ async function getAccessToken() {
     }
 }
 
+async function getTrackPreviewUrl(trackName, artistName){
+    try{
+        const response = await axios.get(`${deezerUrl}/search?q=artist:"${artistName}" track:"${trackName}"`);
+
+        const trackData = response.data.data[0];
+
+        return trackData.preview || null;
+
+    }
+    catch(error){
+        console.error(error.message);
+
+        return null;
+    }
+
+}
+
 async function getTracks(access_token) {
     try {
         if(!num){
@@ -57,6 +75,7 @@ async function getTracks(access_token) {
                 'Authorization': `Bearer ${access_token}`
             }
         });
+
         return response.data.tracks.items;
     } catch (error) {
         console.error(error.message);
@@ -87,12 +106,13 @@ app.get("/api/getSong", async (req, res) => {
         const access_token = await getAccessToken();
         const tracks = await getTracks(access_token);
         const randomSong = await getRandomSong(tracks);
-        const { album, name, preview_url, artists } = randomSong;
+        const previewUrl = await getTrackPreviewUrl(randomSong.name, randomSong.artists[0].name);
+        const { album, name, artists } = randomSong;
         const image = album.images.find(p => p.height === 640);
         res.json({
             imageURL: image ? image.url : '',
             songName: name,
-            previewURL: preview_url,
+            previewURL: previewUrl,
             artist: artists[0].name
         });
     } catch (error) {

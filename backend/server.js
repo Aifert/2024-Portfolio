@@ -76,9 +76,6 @@ async function getTracks(access_token) {
             }
         });
 
-
-        console.log(response)
-
         return response.data.tracks.items;
     } catch (error) {
         console.error(error.message);
